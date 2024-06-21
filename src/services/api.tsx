@@ -11,7 +11,7 @@ const mockStudents: Students[] = [{ name: 'John Doe', marks: 85, registrationId:
 { name: 'Vijay', marks: 58, registrationId: generatorIdFunction() }
 ]
 
-export const fetchStudents:Promise<Students[]> = new Promise((resolve, reject) => {
+export const fetchStudents:Promise<Students[]> = new Promise((resolve) => {
 setTimeout(() => {
     resolve(mockStudents)
 }, 1000);
